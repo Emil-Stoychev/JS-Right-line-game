@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mouse Gradient Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="attachGradientEvents()">
+    <div id="mainMenu">
+
+        <h1>Welcome to Mouse Gradient</h1>
+        <input type="text" placeholder="username" class="username">
+        <span class="wrongUsername">Username must contain min 3 and max 12 symbols!</span>
+        <button class="Play">Play</button>
+        <button class="info">Rules</button>
+    </div>
+    <!-- 
+    <img src="./giffytaa/almostthere.gif" alt="Error 404 not found" class="giff2" id="giff">
+    <img src="./giffytaa/apolagies.gif" alt="Error 404 not found" class="giff3" id="giff">
+    <img src="./giffytaa/awesome.gif" alt="Error 404 not found" class="giff4" id="giff">
+    <img src="./giffytaa/badpop.gif" alt="Error 404 not found" class="giff5" id="giff">
+    <img src="./giffytaa/better.gif" alt="Error 404 not found" class="giff6" id="giff">
+    <img src="./giffytaa/cheater.gif" alt="Error 404 not found" class="giff7" id="giff">
+    <img src="./giffytaa/fuck.gif" alt="Error 404 not found" class="giff8" id="giff">
+    <img src="./giffytaa/good.gif" alt="Error 404 not found" class="giff9" id="giff">
+    <img src="./giffytaa/hellyes.gif" alt="Error 404 not found" class="giff10" id="giff">
+    <img src="./giffytaa/keeptrying.gif" alt="Error 404 not found" class="giff11" id="giff">
+    <img src="./giffytaa/lucky.gif" alt="Error 404 not found" class="giff12" id="giff">
+    <img src="./giffytaa/lucky2.gif" alt="Error 404 not found" class="giff13" id="giff">
+    <img src="./giffytaa/nexttime.gif" alt="Error 404 not found" class="giff14" id="giff">
+    <img src="./giffytaa/nice.gif" alt="Error 404 not found" class="giff15" id="giff">
+    <img src="./giffytaa/nice1.gif" alt="Error 404 not found" class="giff16" id="giff">
+    <img src="./giffytaa/nice2.gif" alt="Error 404 not found" class="giff17" id="giff">
+    <img src="./giffytaa/nopetryagain.gif" alt="Error 404 not found" class="giff18" id="giff">
+    <img src="./giffytaa/nowaydude.gif" alt="Error 404 not found" class="giff19" id="giff">
+    <img src="./giffytaa/ohno.gif" alt="Error 404 not found" class="giff20" id="giff">
+    <img src="./giffytaa/perfect.gif" alt="Error 404 not found" class="giff21" id="giff">
+    <img src="./giffytaa/perfect2.gif" alt="Error 404 not found" class="giff22" id="giff">
+    <img src="./giffytaa/perfect3.gif" alt="Error 404 not found" class="giff23" id="giff">
+    <img src="./giffytaa/perfect4.gif" alt="Error 404 not found" class="giff24" id="giff">
+    <img src="./giffytaa/stopcheating.gif" alt="Error 404 not found" class="giff25" id="giff">
+    <img src="./giffytaa/tenfromten.gif" alt="Error 404 not found" class="giff26" id="giff">
+    <img src="./giffytaa/terrible.gif" alt="Error 404 not found" class="giff27" id="giff">
+    <img src="./giffytaa/terrible2.gif" alt="Error 404 not found" class="giff28" id="giff">
+    <img src="./giffytaa/terrible3.gif" alt="Error 404 not found" class="giff29" id="giff">
+    <img src="./giffytaa/terrible4.gif" alt="Error 404 not found" class="giff30" id="giff">
+    <img src="./giffytaa/terrible5.gif" alt="Error 404 not found" class="giff31" id="giff">
+    <img src="./giffytaa/terrible6.gif" alt="Error 404 not found" class="giff32" id="giff">
+    <img src="./giffytaa/thatsawesome.gif" alt="Error 404 not found" class="giff33" id="giff">
+    <img src="./giffytaa/toobad.gif" alt="Error 404 not found" class="giff34" id="giff">
+    <img src="./giffytaa/tryagain.gif" alt="Error 404 not found" class="giff35" id="giff">
+    <img src="./giffytaa/uareawesome.gif" alt="Error 404 not found" class="giff36" id="giff">
+    <img src="./giffytaa/uareunstoppable.gif" alt="Error 404 not found" class="giff37" id="giff">
+    <img src="./giffytaa/ugh.gif" alt="Error 404 not found" class="giff38" id="giff">
+    <img src="./giffytaa/unstoppable.gif" alt="Error 404 not found" class="giff39" id="giff">
+    <img src="./giffytaa/workinprogress.gif" alt="Error 404 not found" class="giff40" id="giff">
+    <img src="./giffytaa/yeaaa.gif" alt="Error 404 not found" class="giff41" id="giff">
+    <img src="./giffytaa/yousuck.gif" alt="Error 404 not found" class="giff42" id="giff">
+ -->
+
+    <div class="hidden" id="game">
+        <h1 class="welcome">Welcome to Mouse Gradient Game</h1>
+        <div>
+            <img src="./giffytaa/giphy.gif" alt="Error 404 not found" class="giff" id="giff">
+            <img src="./giffytaa/giphy.gif" alt="Error 404 not found" class="giff1" id="giff">
+        </div>
+        <h2 class="target"></h2>
+        <h3 class="score"></h3>
+        <h3 class="score"></h3>
+        <h3 class="score"></h3>
+        <div id="gradient-box">
+            <div id="gradient">Hover here!</div>
+        </div>
+        <div id="result"></div>
+        <button id="tryAgain"></button>
+    </div>
+</body>
+<script src="./app.js"></script>
+
+</html>
